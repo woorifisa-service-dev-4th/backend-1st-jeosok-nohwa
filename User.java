@@ -22,7 +22,7 @@
     /** 프로필 사진 URL */
     private String profilePicture;
 
-    /** 계정 상태 (ACTIVE, INACTIVE, DELETED) */
+    /** 계정 상태 (ACTIVE(활성화), INACTIVE(휴먼계정), DELETED(탈퇴)) */
     private Enum status;
 
     /** 관리자 여부 */
