@@ -20,6 +20,21 @@ import java.util.Date;
      * @param userId 사용자 ID
      * @param dietScore 식단 점수
      * @param exerciseScore 운동 점수
+     */
+    public DailyScore(Date recordDate, Long userId, double dietScore, double exerciseScore) {
+        this.recordDate = recordDate;
+        this.userId = userId;
+        this.dietScore = dietScore;
+        this.exerciseScore = exerciseScore;
+
+    }
+
+    /**
+     * DailyScore 생성자
+     * @param recordDate 기록된 날짜
+     * @param userId 사용자 ID
+     * @param dietScore 식단 점수
+     * @param exerciseScore 운동 점수
      * @param relatedChatSummaryId 연관된 요약 ID
      */
     public DailyScore(Date recordDate, Long userId, double dietScore, double exerciseScore, Long relatedChatSummaryId) {
@@ -29,6 +44,8 @@ import java.util.Date;
         this.exerciseScore = exerciseScore;
         this.relatedChatSummaryId = relatedChatSummaryId;
     }
+
+
 
     /**
      * 하루 총 점수 반환
