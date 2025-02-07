@@ -3,8 +3,12 @@
  */class NewsCrawling {
     /** 뉴스 ID */
     private Long id;
+
+
     /** 뉴스 내용 */
     private String content;
+
+
     /** 뉴스 카테고리 (운동, 영양 등) */
     private String category;
 

@@ -6,8 +6,10 @@ import java.util.List;
  */class ChatRoom {
     /** 채팅방을 소유한 사용자 ID */
     private Long userId;
+
     /** 채팅방 생성 날짜 */
     private Date createdAt;
+
     /** 채팅 메시지 리스트 */
     private List<Chat> chatList;
 

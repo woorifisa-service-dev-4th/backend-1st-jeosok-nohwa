@@ -5,14 +5,20 @@ import java.util.Date;
  */class Chat {
     /** 채팅 메시지 ID */
     private Long id;
+
     /** 채팅 메시지 내용 */
     private String content;
+
     /** 채팅이 생성된 시간 */
     private Date createdAt;
+
     /** 기록된 날짜 */
     private Date recordDate;
+
     /** 채팅 타입 (USER, GPT) */
     private String type;
+
+
     /** 해당 채팅이 속한 채팅방 ID */
     private Long chatRoomId;
 

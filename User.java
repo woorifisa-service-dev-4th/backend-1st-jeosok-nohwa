@@ -3,20 +3,28 @@
  */class User {
     /** 사용자 고유 ID */
     private Long id;
+
     /** 사용자 닉네임 */
     private String nickname;
+
     /** 사용자 이메일 */
     private String email;
+
     /** 사용자 키 (cm) */
     private double height;
+
     /** 사용자 몸무게 (kg) */
     private double weight;
+
     /** BMI 지수 */
     private double bmi;
+
     /** 프로필 사진 URL */
     private String profilePicture;
+
     /** 계정 상태 (ACTIVE, INACTIVE, DELETED) */
-    private String status;
+    private Enum status;
+
     /** 관리자 여부 */
     private boolean isAdmin;
 
@@ -35,7 +43,7 @@
         this.height = height;
         this.weight = weight;
         this.bmi = calculateBMI();
-        this.status = "ACTIVE";
+        this.status = UserStatus.ACTIVE;
         this.isAdmin = false;
     }
 
@@ -62,7 +70,7 @@
 
     /** 계정을 탈퇴 상태로 변경 */
     public void deleteAccount() {
-        this.status = "DELETED";
+        this.status = UserStatus.DELETED;
     }
 
     /**

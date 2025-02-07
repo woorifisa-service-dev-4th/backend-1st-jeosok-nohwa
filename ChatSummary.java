@@ -5,13 +5,17 @@ import java.util.Date;
  */class ChatSummary {
     /** 요약 ID */
     private Long id;
+
     /** 긴 요약 내용 */
     private String longSummary;
+
     /** 짧은 요약 내용 */
     private String shortSummary;
+
     /** 요약 생성 시간 */
     private Date createdAt;
-    /** 기록된 날짜 */
+
+    /** 기록 날짜 */
     private Date recordDate;
 
     /**
@@ -19,7 +23,7 @@ import java.util.Date;
      * @param id 요약 ID
      * @param longSummary 긴 요약 내용
      * @param shortSummary 짧은 요약 내용
-     * @param recordDate 기록된 날짜
+     * @param recordDate 기록 날짜
      */
     public ChatSummary(Long id, String longSummary, String shortSummary, Date recordDate) {
         this.id = id;
